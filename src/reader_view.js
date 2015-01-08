@@ -214,6 +214,7 @@ ReaderView.Prototype = function() {
     this.readerCtrl.switchPanel(panel);
     // keep this so that it gets opened when leaving another panel (toggling reference)
     this.lastPanel = panel;
+    window.app.controller.reader.view.fitFormulas();
   };
 
   // Update Reader State
